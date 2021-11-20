@@ -13,8 +13,8 @@ public class Main {
             int sum1 = 0;
             int sum2 = 0;
             for (int j = 0; j < 3; j++) {
-                sum1 += number.charAt(j);
-                sum2 += number.charAt(j + 3);
+                sum1 += number.charAt(j) - '0';
+                sum2 += number.charAt(j + 3) - '0';
             }
             if (sum1 == sum2) {
                 count++;
